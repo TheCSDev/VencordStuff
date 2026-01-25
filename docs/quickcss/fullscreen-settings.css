@@ -1,0 +1,12 @@
+/**
+ * Make the "Settings" dialog full-screen so less space is wasted.
+ * @author TheCSDev
+ */
+.modal_e44912:has(div.profileCustomizationTab__99464)
+{
+    position: fixed;
+    top: var(--custom-app-top-bar-height);
+    width: 100dvw;
+    height: calc(100dvh - var(--custom-app-top-bar-height));
+    border-radius: 0;
+}

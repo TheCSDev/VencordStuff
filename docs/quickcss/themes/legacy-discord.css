@@ -1,0 +1,59 @@
+/**
+ * Revert the guild-bar back to how it used to look.
+ * 
+ * @name   Guildbar Revert
+ * @author scattagain
+ * @todo   Multiple versions are imported, as Discord tends to change the whole site's CSS back and forth.
+ */
+/*[2025/09/01]*/ @import url("https://raw.githubusercontent.com/scattagain/VencordStuff/4fa465629d6d71092c20aa11245abb6ad4a44641/css/GuildbarRevert.css");
+/*[2025/12/18]*/ @import url("https://raw.githubusercontent.com/scattagain/VencordStuff/f54356315c7f8d5a4690b8d1fb1573f26ad2efd0/css/GuildbarRevert.css");
+/*[  latest  ]*/ @import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
+
+/**
+ * General "Quality of Life" tweaks.
+ * 
+ * @name   QoL
+ * @author TheCSDev
+ */
+@import url("../qol.css");
+
+/**
+ * Revert the "user area" - the place where the user's profile as well as "mute" and "deafen" buttons are.
+ * 
+ * @name   Legacy User Area
+ * @author TheCSDev
+ */
+@import url("../legacy-user-area.css");
+
+/**
+ * Hide bloat links from the DMs list, like "Nitro Home" and "Shop" and "Quests".
+ * 
+ * @name   Hide DMs Bloat
+ * @author TheCSDev
+ */
+@import url("../hide-dms-bloat.css");
+
+/**
+ * Hide Hide clan tags, nameplates, profile effects, display name effects, etc.
+ * 
+ * @name   Hide Profile Effects
+ * @author TheCSDev
+ */
+@import url("../hide-profile-effects.css");
+
+/**
+ * Make the "Settings" dialog full-screen so less space is wasted.
+ * 
+ * @name   Full-screen Settings
+ * @author TheCSDev
+ */
+@import url("../fullscreen-settings.css");
+
+/**
+ * Slightly darker title-bar and guild-bar backgrounds.
+ * This makes the visuals a bit less bland and solid-colored.
+ * 
+ * @author TheCSDev
+ */
+.base__5e434 { background: color-mix(in srgb, var(--background-base-lowest) 90%, black 10%); }
+.guilds__5e434 { background: transparent; }

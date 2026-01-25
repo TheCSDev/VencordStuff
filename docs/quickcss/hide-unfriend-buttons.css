@@ -1,0 +1,16 @@
+/**
+ * Hides buttons related to removing and blocking friends. Useful if you worry about misclicking.
+ * @author TheCSDev
+ */
+span:has(button[aria-label="Friend"]),
+#user-context-remove-friend,
+#user-context-block,
+#user-profile-friend-request-buttons-remove-friend,
+#user-profile-overflow-menu-block,
+#friend-row-remove-friend,
+#user-context-call,
+#user-profile-overflow-menu-report-user,
+span:has(.bannerButton_fb7f94[aria-label="Friend"])
+{
+	display: none !important;
+}

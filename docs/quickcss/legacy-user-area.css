@@ -1,0 +1,32 @@
+/**
+ * Revert the "user area" panel to looking like it used to in the past. Rectangular.
+ * @author TheCSDev
+ */
+.panels__5e434
+{
+	width: calc(100% - 73px);
+	transform: translate(0, var(--space-8));
+	margin-left: 65px;
+	border-radius: 0;
+}
+.sidebar__5e434:after { display: none; }
+
+/**
+ * To match the rectangular look of the "user area", the chat input form is made rectangular as well.
+ * @author TheCSDev
+ */
+.form_f75fb0 { padding: 0; }
+.form_f75fb0 .channelTextArea_f75fb0, .wrapper__44df5
+{
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+/**
+ * By default the guild list sidebar introduces a bottom margin so as to avoid overlapping the default
+ * user area. However given we repositioned the user area away from the guild list, we no longer need
+ * that bottom margin. Remove it.
+ * 
+ * @author TheCSDev
+ */
+.guilds__5e434 { margin-bottom: 0; }

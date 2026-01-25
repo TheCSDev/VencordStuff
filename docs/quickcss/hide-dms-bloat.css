@@ -1,0 +1,18 @@
+/**
+ * Hide bloat buttons like "Nitro Home", "Shop", and "Quests" from the "Direct messages" sidebar.
+ * @author TheCSDev
+ */
+.content_d125d2 li:has(> div > a[href="/store"]),
+.content_d125d2 li:has(> div > a[href="/shop"]),
+.content_d125d2 li:has(> div > a[href="/quest-home"])
+{
+	display: none;
+}
+
+/**
+ * Hide clan tags from DMs list, as they clutter the DMs list visuals.
+ * Clan tags remain visible on profiles however.
+ * 
+ * @author TheCSDev
+ */
+.clanTag__972a0 { display: none; }
