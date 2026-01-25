@@ -1,0 +1,31 @@
+/**
+ * Hide clan tags, nameplates, profile effects, display name effects, etc.
+ * These create visual clutter and obstructions.
+ * 
+ * @author TheCSDev
+ */
+
+/* Hide profile tags */
+span[class*="clanTag"] { display: none; }
+
+/* Hide nameplates */
+.container__4bbc6, ._4bbc6dc06e75ad52-container { display: none; }
+
+/* Hide profile effects (GIFs obstructing entire profile) */
+.profileEffects__01370, ._0137000bc80ab6ea-profileEffects { display: none; }
+
+/* Partially hide display name (username) effects (the rainbows) */
+span[data-username-with-effects]
+{
+	color: inherit !important;
+	background: transparent !important;
+	-webkit-text-fill-color: inherit !important;
+	--custom-display-name-styles-main-color: transparent !important;
+	--custom-display-name-styles-light-1-color: transparent !important;
+	--custom-display-name-styles-light-2-color: transparent !important;
+	--custom-display-name-styles-dark-1-color: transparent !important;
+	--custom-display-name-styles-dark-2-color: transparent !important;
+	--custom-display-name-styles-toon-stroke-color: transparent !important;
+	--custom-display-name-styles-wrap: wrap !important;
+	--custom-display-name-styles-font-opacity: 1 !important;
+}
