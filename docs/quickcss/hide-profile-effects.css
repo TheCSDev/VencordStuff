@@ -1,0 +1,43 @@
+/**
+ * Hide clan tags, nameplates, profile effects, display name effects, etc.
+ * These create visual clutter and obstructions.
+ * 
+ * @author TheCSDev
+ */
+
+/* Hide profile tags */
+span[class*="clanTag"] { display: none; }
+
+/* Hide nameplates */
+.container__4bbc6, ._4bbc6dc06e75ad52-container, .container_df39b2 { display: none; }
+
+/* Hide profile effects (GIFs obstructing entire profile) */
+[class^="profileEffects__"], [class$="-profileEffects"] { display: none; }
+
+/* Partially hide display name (username) effects (the rainbows) */
+span[data-username-with-effects]
+{
+	color: inherit !important;
+	background: transparent !important;
+	-webkit-text-fill-color: inherit !important;
+	--custom-display-name-styles-main-color: transparent !important;
+	--custom-display-name-styles-light-1-color: transparent !important;
+	--custom-display-name-styles-light-2-color: transparent !important;
+	--custom-display-name-styles-dark-1-color: transparent !important;
+	--custom-display-name-styles-dark-2-color: transparent !important;
+	--custom-display-name-styles-toon-stroke-color: transparent !important;
+	--custom-display-name-styles-wrap: wrap !important;
+	--custom-display-name-styles-font-opacity: 1 !important;
+}
+.message__5126c .twoColorGradient_e5de78, .container__0f2e8 .twoColorGradient_e5de78, .member__5d473 .twoColorGradient_e5de78
+{
+	background: transparent !important;
+	color: color-mix(in srgb, var(--custom-gradient-color-1) 50%, var(--custom-gradient-color-2)) !important;
+	-webkit-text-fill-color: inherit !important;
+}
+.message__5126c .threeColorGradient_e5de78, .container__0f2e8 .threeColorGradient_e5de78, .member__5d473 .threeColorGradient_e5de78
+{
+	background: transparent !important;
+	color: color-mix(in srgb, var(--custom-gradient-color-1) 50%, color-mix(in srgb, var(--custom-gradient-color-2), var(--custom-gradient-color-3)));
+	-webkit-text-fill-color: inherit !important;
+}
