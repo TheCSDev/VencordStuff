@@ -1,0 +1,12 @@
+/**
+ * Disable word-wrap and apply monospace font for "<pre><code>" code blocks -
+ * Make them horizontally scrollable.
+ * @author TheCSDev
+ */
+* pre code
+{
+	font-family: "Courier New", Courier, monospace !important;
+	display: block !important;
+	overflow-x: auto !important;
+	white-space: pre !important;
+}
